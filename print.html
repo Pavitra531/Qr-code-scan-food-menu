@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Codes for Tables</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .qr-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .qr-box {
+            background: white;
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .qr-box img {
+            width: 150px;
+            height: 150px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        @media print {
+            button {
+                display: none; /* Hide the button when printing */
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>QR Codes for Tables</h1>
+    <div class="qr-container">
+        <!-- QR Codes for tables -->
+        <div class="qr-box">
+            <img src="table1.png" alt="QR Code for Table 1">
+            <p>Table 1</p>
+        </div>
+        <div class="qr-box">
+            <img src="table2.png" alt="QR Code for Table 2">
+            <p>Table 2</p>
+        </div>
+        <div class="qr-box">
+            <img src="table3.png" alt="QR Code for Table 3">
+            <p>Table 3</p>
+        </div>
+        <div class="qr-box">
+            <img src="table4.png" alt="QR Code for Table 4">
+            <p>Table 4</p>
+        </div>
+        <div class="qr-box">
+            <img src="table5.png" alt="QR Code for Table 5">
+            <p>Table 5</p>
+        </div>
+        <div class="qr-box">
+            <img src="table6.png" alt="QR Code for Table 6">
+            <p>Table 6</p>
+        </div>
+        <div class="qr-box">
+            <img src="table7.png" alt="QR Code for Table 7">
+            <p>Table 7</p>
+        </div>
+    </div>
+    <button onclick="window.print()">Print QR Codes</button>
+</body>
+</html>
